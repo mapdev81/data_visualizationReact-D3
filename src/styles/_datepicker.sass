@@ -1,0 +1,116 @@
+@import vars
+
+.react-datepicker
+  max-width: 320px
+  border: 0
+  .react-datepicker__header
+    background-color: initial
+    padding: 0
+
+  .react-datepicker__month-container
+    float: initial
+
+  .react-datepicker__month,
+  .react-datepicker__names
+    font-size: 12px
+
+  .react-datepicker__day-name,
+  .react-datepicker__day
+    //width: 12%
+    margin: 2px 7px
+    padding: 9px
+    //width: 1rem
+    width: 4%
+    @extend .HelveticaNeue
+    font-size: 12px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 1
+    letter-spacing: -0.3px
+    text-align: center
+    color: #6c6f70
+
+  .react-datepicker__day-name
+    padding-bottom: 0
+    text-transform: uppercase
+
+  .react-datepicker__day--in-range
+    background-color: transparent
+    border-radius: 0
+    position: relative
+    z-index: 0
+    &::after
+      content: ''
+      background-color: $light-sage
+      width: 150%
+      height: 100%
+      z-index: -2
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      margin: auto
+      bottom: 0
+
+  .react-datepicker__day--range-start,
+  .react-datepicker__day--range-end
+    background-color: transparent
+    color: $white-default
+    &::before
+      content: ''
+      position: absolute
+      z-index: -1
+      width: 100%
+      height: 100%
+      background-color: $dark-lime-green
+      border-radius: 50%
+      top: 0
+      left: 0
+      right: 0
+      margin: auto
+      bottom: 0
+
+  .react-datepicker__day--range-start
+    &::after
+      width: 100%
+      right: -100%
+
+  .react-datepicker__day--range-end
+    &::after
+      width: 50%
+      left: -50%
+
+  .react-datepicker__current-month
+    padding-bottom: 5px
+    font-size: 14px
+    font-weight: bold
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #333333
+
+  .react-datepicker__week
+    padding: 5px 0
+
+  .react-datepicker__day--outside-month
+    opacity: 0.5
+
+.datepicker-exclude
+  input,
+  .mui-checkbox
+    margin: 30px 5px 20px 0
+
+  p
+    font-size: 14px
+    font-weight: 300
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.43
+    letter-spacing: normal
+    color: #6c6f70
+  .datepicker-exclude-extra
+    padding-left: 20px
+

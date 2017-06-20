@@ -1,0 +1,143 @@
+@import vars
+
+//::-webkit-scrollbar
+//  margin 2px
+//  width 8px
+//
+//::-webkit-scrollbar-thumb
+//  background-color #9C9B9B
+//
+//::-moz-scrollbar
+//  margin 2px
+//  width 8px
+//
+//::-moz-scrollbar-thumb
+//  background-color #9C9B9B
+//
+//::-o-scrollbar
+//  margin 2px
+//  width 8px
+//
+//::-o-scrollbar-thumb
+//  background-color: #9C9B9B
+
+.button
+  @extend .HelveticaNeue
+  font-size: 14px
+  font-weight: 500
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: center
+  color: #ffffff
+  width: 105px
+  height: 24px
+  border-radius: 3px
+  background-color: $dark-lime-green
+  padding: 5px !important
+
+.grid-flex-container
+  margin: 0
+.main
+  margin: $headerHeight 0 0
+.side-nav
+  a
+    padding: 0
+    padding-bottom: 15px
+    @extend .HelveticaNeue
+    font-size: 12px
+    font-weight: bold
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #000000
+  .sub-nav
+    a
+      padding-bottom: 5px
+      padding-left: 10px
+      @extend .HelveticaNeue
+      font-size: 11px
+      font-weight: bold
+      font-style: normal
+      font-stretch: normal
+      line-height: 2.09
+      letter-spacing: -0.3px
+      color: #595c5d
+
+.current-item
+  text-decoration: underline
+
+.map-list
+  padding-bottom: 120px
+  overflow: initial
+  p
+    margin-bottom: 10px
+    font-size: 12px
+    color: #a4a3a2
+
+// Collpase Panel
+
+.rc-collapse
+  @extend .HelveticaNeue
+  border: 0
+  background-color: transparent
+  .rc-collapse-item
+    position: relative
+    border-top: solid 1px #dedede
+    .arrow
+      position: absolute
+      right: 0
+      margin: 16px !important
+  .rc-collapse-header
+    padding: 20px 0
+    text-indent: initial !important
+    font-size: 14px
+    font-weight: 800
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.43
+    letter-spacing: normal
+  .rc-collapse-content-box
+    margin: 0
+  .rc-collapse-content-title
+    font-size: 14px
+    font-weight: 800
+    padding-bottom: 20px
+  .rc-collapse-content
+    padding: 20px 0
+    border-top: solid 1px #dedede
+    font-size: 14px
+    font-weight: 300
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.43
+    letter-spacing: normal
+    iframe
+      border: solid 1.2px rgba(0, 0, 0, 0.12)
+      margin-left: 40px
+
+body
+  background-color: $white-two
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+section
+  width: 100%
+  margin-bottom: 30px
+  padding: 20px
+  background-color: #fff
+  height: 200px
+
+.mui-btn--primary
+  background-color: $dark-lime-green
+  width: 105px
+  height: 24px
+  border-radius: 3px
+  line-height: 10px
+
+.mui-textfield
+  &>input
+    &:focus
+      border-color: $dark-lime-green

@@ -1,0 +1,216 @@
+@import vars
+
+.brand
+  width: 358px
+  height: 28px
+  @extend .HelveticaNeue
+  font-size: 24px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  color: #595c5d
+  &::before
+    content: ''
+    position: relative
+    width: 1px
+    border-left: 1px solid #979797
+    padding: 11px 0
+    padding-left: 30px
+
+.mui-appbar
+  top: 0
+  position: absolute
+  width: 100%
+  height: $headerHeight
+  background-color: $white-default
+  header
+    width: 100%
+    height: $headerHeight
+    &>*
+      display: inline-block
+    a
+      height: 100%
+      width: 350px
+      position: relative
+      vertical-align: middle
+    img
+      +center
+    .header-user
+      color: black
+      float: right
+      margin: 33px
+      text-align: right
+
+nav
+  position: absolute !important
+  top: 115px
+  bottom: 0
+  padding: 10px
+  width: 200px
+  //left: -200px
+  margin: 0
+  z-index: 2
+  transition: transform 0.2s
+  height: 100%
+  //margin: 10px
+  .inner-nav
+    background-color: $white-default
+    padding: 0 22px
+    position: relative
+  ul, li, a
+    border: 0 !important
+  ul
+    margin-bottom: 10px
+  p
+    margin: 0
+    font-size: 12px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #595c5d
+  .nav-bottom
+    background-color: $white-default
+    //position: absolute
+    bottom: 20px
+    padding-bottom: 22px
+
+#content-wrapper
+  min-height: 100%
+  padding: 10px
+  overflow-x: hidden
+  margin-left: 220px
+  transition: margin-left 0.2s
+
+  /* sticky bottom */
+  margin-bottom: -160px
+  padding-bottom: 160px
+
+a
+  color: $dark-lime-green
+
+#root
+  @mixin maxHeight
+//&>*
+//  maxHeight()
+.view-container
+  padding: 0
+.container
+  margin: 10px
+  padding: 0
+.block-header
+  @extend .HelveticaNeue
+  position: initial
+  width: 100%
+  background-color: $white-two
+  height: 80px
+  display: block
+  .block-header-right
+    float: right
+    margin: 20px 0
+    &>*
+      display: inline-block
+      margin-left: 10px
+    button
+      padding: 6px
+      min-width: 160px
+      text-align: center
+      height: 28px
+      border-radius: 3px
+      background-color: #ffffff
+      border: solid 1px white
+      @extend .HelveticaNeue
+      font-size: 14px
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: normal
+      letter-spacing: normal
+      color: #595c5d
+  h1
+    font-size: 32px
+    font-weight: bold
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #161616
+    margin: 0
+    padding-top: 20px
+    small
+      font-size: 14px
+      margin-left: 15px
+  p
+    max-width: 740px
+    padding-bottom: 40px
+    font-size: 14px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.5
+    letter-spacing: normal
+    color: #595c5d
+.left-nav
+  position: initial
+.fixed-header
+  .map-list
+    overflow: auto
+    margin: 0
+    //max-height: 63%
+    padding: 0
+  .left-nav
+    position: fixed !important
+    top: 0
+    bottom: 0
+    min-height: initial
+    height: initial
+    overflow: auto
+  .sticky-header
+    position: fixed
+    width: 80.5%
+    height: 90px
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2)
+    top: 0
+    .block-header-right
+      margin: 30px 0
+  .sticky-header-container
+    .block-container
+      margin-top: 80px
+  .page-header
+    padding-top: 30px
+  .container
+    width: 80.5%
+    margin-top: 90px
+    position: absolute
+    right: 0
+
+.study-progress
+  @extend .HelveticaNeue
+  font-size: 12px
+  font-weight: 500
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  color: #595c5d
+  margin: 0 0 28px
+  padding-top: 22px
+  p
+    margin: 0 0 10px
+  .study-progress-bar
+    position: relative
+    div
+      width: 100%
+      &:nth-child(1)
+        position: absolute
+        left: 0
+        height: 3px
+        background-color: $dark-lime-green
+      &:nth-child(2)
+        height: 3px
+        background-color: #d6d6d4
+
+
