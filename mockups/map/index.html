@@ -152,9 +152,7 @@
                             var op = 0;
                             
                             if(spaces[d.id]) {
-
                                 op = spaces[d.id].metrics.utilization;
-
                             }
 
                             var color_r = parseInt(parseFloat(start_color.r) * op + parseFloat(end_color.r) * (1-op));
@@ -165,11 +163,9 @@
                         });
                 });
 
-                d3.select('#drawOccupancy').on('click', function() {
-                    
+                d3.select('#drawOccupancy').on('click', function() {                    
                         room_paths.transition().duration(200)
                         .style('fill', function(d) {
-
                             if(d.properties.facility=='wall') return;
 
                             var end_color = { "r": 255, "g": 255, "b": 255};
@@ -178,9 +174,7 @@
                             var op = 0;
                             
                             if(spaces[d.id]) {
-
                                 op = spaces[d.id].metrics.occupancy;
-
                             }
 
                             var color_r = parseInt(parseFloat(start_color.r) * op + parseFloat(end_color.r) * (1-op));
